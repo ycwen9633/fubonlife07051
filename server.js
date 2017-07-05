@@ -3,6 +3,7 @@ var bodyparser = require('body-parser')
 var methodOverride = require('method-override')
 var fs = require('fs')
 var request = require('request')
+var port = process.env.PORT || 8000
 
 /* Const */
 const SERVER_URL_SANDBOX = 'https://sandbox.tappayapis.com/tpc/applepay/paymenttoken/pay'
@@ -62,7 +63,7 @@ app.post('/apple-pay/pay', (req, res) => {
         }
 
         res.send({ status: 0 })
-          console.log(err)
+
     })
 
 })
@@ -74,6 +75,10 @@ app.post('/apple-pay/pay', (req, res) => {
 
 })
 **/
-app.listen(process.env.PORT || 3000, function(){
+/**app.listen(process.env.PORT || 3000, function(){
   console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+});
+**/
+server.listen(port, function() {
+    console.log("App is running on port " + port);
 });
