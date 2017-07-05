@@ -62,13 +62,13 @@ app.post('/apple-pay/pay', (req, res) => {
         }
 
         res.send({ status: 0 })
-
+          console.log(err)
     })
 
 })
 
 /**
-    app.listen(portNumber, (error) => {
+  app.listen(portNumber, (error) => {
 
     console.log('Requester is listening on port : ' + portNumber)
 
