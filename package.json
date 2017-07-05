@@ -1,0 +1,23 @@
+{
+  "name": "apple_pay_demo",
+  "version": "1.0.0",
+  "description": "TapPay AppleDemo",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "express": "^4.14.0",
+    "method-override": "^2.3.5",
+    "request": "^2.65.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "sudo node server.js"
+  },
+  "keywords": [
+    "ApplePay",
+    "TapPay"
+  ],
+  "author": "Codezeman",
+  "license": "ISC"
+}
