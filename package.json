@@ -13,7 +13,7 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "sudo node server.js"
+    "start": "sudo PORT=3000 node server.js"
   },
   "keywords": [
     "ApplePay",
