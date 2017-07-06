@@ -5,16 +5,16 @@ var fs = require('fs')
 var request = require('request')
 var port = process.env.PORT || 8000
 
-/* Const */
+// /* Const */
 const SERVER_URL_SANDBOX = 'https://sandbox.tappayapis.com/tpc/applepay/paymenttoken/pay'
 const PARTNER_KEY = ''
 const MERCHANT = ''
 const APP_ID = 0
 const APPLE_PAY_MERCHANT = ''
-
-
-
-var portNumber = 80
+//
+//
+//
+// var portNumber = 80
 var app = express()
 app.use(bodyparser.json())
 app.use(bodyparser.urlencoded({ extended: false }))
@@ -75,9 +75,15 @@ app.post('/apple-pay/pay', (req, res) => {
 
 });
 **/
-
-  app.listen(process.env.PORT || 80, function(){
+// app.post('/123',function(req,res){
+//   res.send('123');
+// })
+// app.get('/ccc',function(req,res){
+//   res.send('ccccc');
+// })
+  app.listen( 8000, function(){
     console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+    //console.log("hihihhi");
 });
 
 /**server.listen(port, function() {
