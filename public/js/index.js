@@ -47,7 +47,7 @@ function applePayButtonClicked() {
         requiredShippingContactFields: ['postalAddress', 'email'],
     };
 
-    const session = TPDirect.applePay.buildSession(paymentRequest, "Your Apple Merchant ID")
+    const session = TPDirect.applePay.buildSession(paymentRequest, "merchant.com.ycFubon")
 
 
     /**

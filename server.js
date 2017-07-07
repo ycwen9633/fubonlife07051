@@ -7,10 +7,10 @@ var port = process.env.PORT || 8000
 
 // /* Const */
 const SERVER_URL_SANDBOX = 'https://sandbox.tappayapis.com/tpc/applepay/paymenttoken/pay'
-const PARTNER_KEY = ''
-const MERCHANT = ''
-const APP_ID = 0
-const APPLE_PAY_MERCHANT = ''
+const PARTNER_KEY = 'te3TVAmcn98Ss74Onr3l3S10E0BDOUY5kuuiQfig'
+const MERCHANT = 'Test1'
+const APP_ID = 10654
+const APPLE_PAY_MERCHANT = 'merchant.com.ycFubon'
 //
 //
 //
